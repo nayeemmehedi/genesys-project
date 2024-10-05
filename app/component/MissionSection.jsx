@@ -3,7 +3,6 @@ import quote from "@/public/Icon/quote.svg";
 import man from "@/public/img/img5.png";
 import Image from "next/image";
 import { montserrat } from "@/lib/font";
-import FramerMotion from "@/utlis/FormerMotion";
 
 function MissionSection() {
   return (
