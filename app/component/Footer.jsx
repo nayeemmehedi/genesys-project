@@ -1,6 +1,6 @@
 "use client"
 
-import logo from "@/public/Logo/Valuetainment_logo1.svg";
+import logo from "../../assets/Logo/Valuetainment_logo1.svg";
 import Image from "next/image";
 import {
   FaFacebookF,

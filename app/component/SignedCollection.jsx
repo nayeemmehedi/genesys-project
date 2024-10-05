@@ -2,13 +2,8 @@
 import { useEffect, useRef } from "react";
 import { montserrat } from "@/lib/font";
 import gsap from "gsap";
-import man from "@/public/img/img5.png";
 import Image from "next/image";
-import put from "@/public/img/put.png";
 import { FaArrowRight } from "react-icons/fa";
-import red from "@/public/img/red.png";
-import white from "@/public/img/white.png";
-import quote from "@/public/Icon/quote.svg";
 import FramerMotion from "@/utlis/FormerMotion";
 
 export default function SignedCollection() {
@@ -75,7 +70,7 @@ export default function SignedCollection() {
               </button>
             </div>
             <div className="sm:w-[80%]  md:w-[50%]  lg:w-[80%] mx-auto mb-10">
-              <Image src={put} height={400} width={400} alt="signature" />
+              <Image src={"/img/put.png"} height={400} width={400} alt="signature" />
             </div>
           </div>
           </FramerMotion>
@@ -84,7 +79,7 @@ export default function SignedCollection() {
           <div className="flex items-center justify-center space-x-2">
             <div className="relative w-72 h-72 lg:bottom-10" ref={iconRef}>
               <Image
-                src={red}
+                src={"/img/red.png"}
                 alt="Red Image"
                 className="w-full h-full rounded-lg object-contain"
                 layout="fill"
@@ -92,7 +87,7 @@ export default function SignedCollection() {
             </div>
             <div className="relative w-60 h-60 lg:bottom-10 lg:right-14" ref={iconRef2}>
               <Image
-                src={white}
+                src={"/img/white.png"}
                 alt="White Image"
                 className="w-full h-full rounded-lg object-contain"
                 layout="fill"

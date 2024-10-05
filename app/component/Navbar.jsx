@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import logo from "@/public/Logo/Valuetainment_logo.svg";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -24,7 +23,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center h-16">
         <div className="text-white text-3xl font-bold flex items-center">
           <span className="mr-2" ref={iconRef}>
-            <Image src={logo} alt="Sonne Icon" height={40} width={40} />
+            <Image src={"/Logo/Valuetainment_logo.svg"} alt="Sonne Icon" height={40} width={40} />
           </span>
           <span className="h-10 leading-none">VTMERCH</span>
         </div>

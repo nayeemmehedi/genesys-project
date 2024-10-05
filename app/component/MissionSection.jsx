@@ -1,6 +1,4 @@
 import React from "react";
-import quote from "@/public/Icon/quote.svg";
-import man from "@/public/img/img5.png";
 import Image from "next/image";
 import { montserrat } from "@/lib/font";
 
@@ -20,7 +18,7 @@ function MissionSection() {
               {" "}
               {/* Added margin for better spacing on small screens */}
               <div className="relative ">
-                <Image src={quote} alt="quote" height={150} width={150}></Image>
+                <Image src={"/Icon/quote.svg"} alt="quote" height={150} width={150}></Image>
                 <div className="text-sm sm:text-3xl px-4 sm:px-0 relative bottom-12 left-10">
                   {" "}
                   {/* Adjusted font size and padding for small devices */}
@@ -34,9 +32,11 @@ function MissionSection() {
             {/* Image on the right */}
             <div className="h-[250px] sm:h-[380px] w-auto  absolute bottom-1 left-auto sm:right-0 md:right-0 lg:right-20 sm:z-0 z-0 ">
               <Image
-                src={man}
+                src={"/img/img5.png"}
                 alt="Man"
                 className="w-full h-full object-cover rounded-md"
+                width={300}
+                height={300}
               />
               <div className="h-[2px] bg-zinc-500 w-[245px]"></div>
               <div className="h-[1px] bg-black w-[245px]"></div>

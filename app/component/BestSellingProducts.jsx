@@ -2,20 +2,10 @@
 
 import { montserrat } from "@/lib/font";
 import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 import FramerMotion from "@/utlis/FormerMotion";
 
 export default function BestSellingProducts() {
-  const iconRef = useRef(null);
 
-  useGSAP(() => {
-    gsap.to("#id1", {
-    
-      duration: 1.5,
-      opacity: 1,
-    });
-  }, []);
 
   return (
     <section id="id1" className="bg-gray-100 pt-12 pb-6 text-black  opacity-0"  >
