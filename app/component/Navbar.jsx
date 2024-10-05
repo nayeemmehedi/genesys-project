@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import logo from "./nav_logo.png"
+
 
 export default function Navbar() {
   const iconRef = useRef(null);
@@ -23,7 +25,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center h-16">
         <div className="text-white text-3xl font-bold flex items-center">
           <span className="mr-2" ref={iconRef}>
-            <Image src={"/logo/nav_logo.png"} alt="Sonne Icon" height={40} width={40} />
+            <Image src={logo} alt="Sonne Icon" height={40} width={40} />
           </span>
           <span className="h-10 leading-none">VTMERCH</span>
         </div>

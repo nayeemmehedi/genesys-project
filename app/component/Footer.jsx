@@ -11,6 +11,8 @@ import { SiVisa, SiApplepay, SiPaypal, SiMastercard } from "react-icons/si";
 import { FiPhone } from 'react-icons/fi';
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import logo1 from "./nav_logo2.png"
+
 
 export default function Footer() {
   const iconRef = useRef(null);
@@ -32,7 +34,7 @@ export default function Footer() {
         <div className="flex items-center h-16">
           <div className="text-white text-3xl font-bold flex items-center">
             <span className="mr-2">
-              <Image src={"/logo/nav_logo2.png"} alt="Sonne Icon" height={40} width={40} />
+              <Image src={logo1} alt="Sonne Icon" height={40} width={40} />
             </span>
             <span className="h-10 leading-none">VTMERCH</span>
           </div>
