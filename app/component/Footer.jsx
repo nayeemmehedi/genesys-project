@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="flex items-center h-16">
           <div className="text-white text-3xl font-bold flex items-center">
             <span className="mr-2">
-              <Image src={"/logo/valuetainment_logo1.svg"} alt="Sonne Icon" height={40} width={40} />
+              <Image src={"/logo/nav_logo2.png"} alt="Sonne Icon" height={40} width={40} />
             </span>
             <span className="h-10 leading-none">VTMERCH</span>
           </div>
