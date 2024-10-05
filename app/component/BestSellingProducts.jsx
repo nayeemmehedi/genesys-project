@@ -8,7 +8,7 @@ export default function BestSellingProducts() {
 
 
   return (
-    <section id="id1" className="bg-gray-100 pt-12 pb-6 text-black  opacity-0"  >
+    <section id="id1" className="bg-gray-100 pt-12 pb-6 text-black  "  >
       <FramerMotion>
       <div className="container mx-auto px-4">
         <div className={`${montserrat.className} `}>
