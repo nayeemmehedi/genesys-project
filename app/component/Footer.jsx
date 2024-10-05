@@ -1,6 +1,5 @@
 "use client"
 
-import logo from "../../assets/Logo/Valuetainment_logo1.svg";
 import Image from "next/image";
 import {
   FaFacebookF,
@@ -33,7 +32,7 @@ export default function Footer() {
         <div className="flex items-center h-16">
           <div className="text-white text-3xl font-bold flex items-center">
             <span className="mr-2">
-              <Image src={logo} alt="Sonne Icon" height={40} width={40} />
+              <Image src={"/Logo/Valuetainment_logo1.svg"} alt="Sonne Icon" height={40} width={40} />
             </span>
             <span className="h-10 leading-none">VTMERCH</span>
           </div>
