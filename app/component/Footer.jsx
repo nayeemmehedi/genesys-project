@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import {
@@ -8,11 +8,11 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import { SiVisa, SiApplepay, SiPaypal, SiMastercard } from "react-icons/si";
-import { FiPhone } from 'react-icons/fi';
+import { FiPhone } from "react-icons/fi";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import logo1 from "./nav_logo2.png"
-
+import logo from "./nav_logo.png";
+import logo1 from "./nav_logo2.png";
 
 export default function Footer() {
   const iconRef = useRef(null);
@@ -20,7 +20,7 @@ export default function Footer() {
   useEffect(() => {
     gsap.to(iconRef.current, {
       y: -5,
-      x:-3,
+      x: -3,
       repeat: -1,
       yoyo: true,
       duration: 1.5,
@@ -139,7 +139,7 @@ export default function Footer() {
                   <li className="hover:text-gray-400">
                     {" "}
                     <div className="flex items-center space-x-2" ref={iconRef}>
-                      <FiPhone size={24} className="text-red-600 "  />
+                      <FiPhone size={24} className="text-red-600 " />
                       <span className="text-white">01740147945</span>
                     </div>
                   </li>
@@ -185,11 +185,32 @@ export default function Footer() {
               <p className="text-center md:text-left">
                 &copy; 2024 Valuetainment Store. All rights reserved.
               </p>
-              <div className="flex space-x-6 mt-4 md:mt-0 justify-center">
-                <SiVisa size={32} />
-                <SiApplepay size={32} />
-                <SiPaypal size={32} />
-                <SiMastercard size={32} />
+              <div className="flex space-x-4 justify-center items-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg"
+                  alt="Visa"
+                  className="h-3"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Mastercard_2019_logo.svg"
+                  alt="Mastercard"
+                  className="h-3"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1000px-American_Express_logo_%282018%29.svg.png"
+                  alt="American Express"
+                  className="h-8"
+                />
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+                  alt="PayPal"
+                  className="h-3"
+                />
+                <img
+                  src="https://logowik.com/content/uploads/images/amex-card1708.jpg"
+                  alt="amex"
+                  className="h-3"
+                />
               </div>
             </div>
           </div>
