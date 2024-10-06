@@ -5,6 +5,9 @@ import gsap from "gsap";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import FramerMotion from "@/utlis/FormerMotion";
+import red from "./red.svg"
+import white from "./white.svg"
+
 
 export default function SignedCollection() {
   const iconRef = useRef(null);
@@ -73,7 +76,7 @@ export default function SignedCollection() {
               ref={iconRef}
             >
               <Image
-                src={"/logo/red.svg"}
+                src={red}
                 alt="Red Image"
                 className="w-full h-full rounded-lg object-contain"
                 height={32}
@@ -85,7 +88,7 @@ export default function SignedCollection() {
               ref={iconRef2}
             >
               <Image
-                src={"/logo/white.svg"}
+                src={white}
                 alt="White Image"
                 className="w-full h-full rounded-lg object-contain"
                 height={32}
