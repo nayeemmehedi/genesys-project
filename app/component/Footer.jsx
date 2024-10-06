@@ -7,12 +7,12 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import { SiVisa, SiApplepay, SiPaypal, SiMastercard } from "react-icons/si";
+// import { SiVisa, SiApplepay, SiPaypal, SiMastercard } from "react-icons/si";
 import { FiPhone } from "react-icons/fi";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import logo from "./nav_logo.png";
 import logo1 from "./nav_logo2.png";
+import { customerService, ProductsService } from "../extra/Hero";
 
 export default function Footer() {
   const iconRef = useRef(null);
@@ -64,71 +64,31 @@ export default function Footer() {
                 </form>
               </div>
 
-              {/* Footer Links - 3 columns */}
               <div className="md:col-span-1 w-full">
                 <h5 className="font-bold mb-4">Customer Services</h5>
                 <ul className="space-y-2">
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      About Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Search
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Privacy Policy
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Contact Us
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Terms of Service
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Refund Policy
-                    </a>
-                  </li>
+                  {customerService.map((v, id) => (
+                    <li key={id}>
+                      <a href="#" className="hover:text-gray-400">
+                        {v.name}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
 
               <div className="md:col-span-1 w-full">
                 <h5 className="font-bold mb-4">Products</h5>
                 <ul className="space-y-2">
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Featured Products
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Bestsellers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      Latest Products
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      All Collections
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-gray-400">
-                      All Products
-                    </a>
-                  </li>
+                <ul className="space-y-2">
+                  {ProductsService.map((v, id) => (
+                    <li key={id}>
+                      <a href="#" className="hover:text-gray-400">
+                        {v.name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
                 </ul>
               </div>
 
@@ -180,7 +140,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Bottom Section */}
             <div className="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
               <p className="text-center md:text-left">
                 &copy; 2024 Valuetainment Store. All rights reserved.

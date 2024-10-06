@@ -31,10 +31,8 @@ export default function SignedCollection() {
 
   return (
     <section className="relative bg-black text-white py-16 z-0 overflow-hidden">
-      {/* Main container for text and images */}
-      <section className="pt-6 pb-16">
+      <section className="py-2">
         <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:w-[90%]">
-          {/* Left Section with Text */}
           <FramerMotion>
             <div
               className={`${montserrat.className} text-center lg:text-left lg:pr-6`}

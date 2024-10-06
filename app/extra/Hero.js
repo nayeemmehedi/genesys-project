@@ -51,3 +51,40 @@ export let capImages =[
     },
    
 ]
+
+export let customerService=[
+    {
+        name:"About Us"
+    },
+    {
+        name:"Search"
+    },
+    {
+        name:"Privacy Policy"
+    },
+    {
+        name:"Contact Us"
+    },
+    {
+        name:"Terms of Service"
+    },
+    {
+        name:"Refund Policy"
+    },
+]
+
+
+export let ProductsService=[
+    {
+        name:"Featured Products"
+    },
+    {
+        name:"Best sellers"
+    },
+    {
+        name:"All Collections"
+    },
+    {
+        name:"All Products"
+    }
+]

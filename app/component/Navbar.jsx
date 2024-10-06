@@ -3,8 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
-import logo from "./nav_logo.png"
-
+import logo from "./nav_logo.png";
 
 export default function Navbar() {
   const iconRef = useRef(null);
@@ -12,7 +11,7 @@ export default function Navbar() {
   useEffect(() => {
     gsap.to(iconRef.current, {
       y: -5,
-      x:3,
+      x: 3,
       repeat: -1,
       yoyo: true,
       duration: 1.5,
