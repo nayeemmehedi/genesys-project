@@ -73,7 +73,7 @@ export default function SignedCollection() {
               ref={iconRef}
             >
               <Image
-                src={"/img/red.png"}
+                src={"/logo/red.svg"}
                 alt="Red Image"
                 className="w-full h-full rounded-lg object-contain"
                 height={32}
@@ -85,7 +85,7 @@ export default function SignedCollection() {
               ref={iconRef2}
             >
               <Image
-                src={"/img/white.png"}
+                src={"/logo/white.svg"}
                 alt="White Image"
                 className="w-full h-full rounded-lg object-contain"
                 height={32}
